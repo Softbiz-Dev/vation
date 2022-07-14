@@ -40,7 +40,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 3;
   pointer-events: none;
 }
 
@@ -65,16 +64,18 @@
   -webkit-align-items: left;
   align-items: left;
   padding: 2rem;
-
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 
   &-title {
-    font-size: 48px;
+    font-size: 60px;
   }
   &-subtitle {
-    font-size: 24px;
+    font-size: 32px;
   }
   &-description {
-    font-size: 18px;
+    font-size: 24px;
   }
   &-calltoaction {
     width: 150px;
@@ -88,8 +89,9 @@
   }
 
   &-content {
-    width: 100%;
+    z-index: 4;
     height: 100%;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -103,10 +105,6 @@
     -webkit-align-items: left;
     align-items: left;
     flex-direction: column;
-    position: absolute;
-    backdrop-filter: saturate(50%) blur(20px);
-    backdrop-filter: hue-rotate(90deg) saturate(30%);
-    backdrop-filter: saturate(30%);
-    backdrop-filter: brightness(70%);
+    margin-left: 6rem;
   }
 }
