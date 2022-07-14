@@ -1,0 +1,36 @@
+.navbar {
+  height: 6rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+
+  &-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  &-right {
+    margin-left: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+  }
+
+  &-item {
+    margin: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &-logo {
+    height: auto;
+    width: 10rem;
+  }
+}

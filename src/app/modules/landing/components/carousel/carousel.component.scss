@@ -1,0 +1,91 @@
+
+#particles-js {
+  height: 100vh;
+  background-image: url("../../../../../assets/images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: -1;
+
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: calc(100% - 6rem);
+  top: 6rem;
+  position: absolute;
+  //background-color: white;
+}
+
+::ng-deep .swiper-slide {
+  //text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+/*   -webkit-justify-content: center;
+  justify-content: center; */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+::ng-deep .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background{
+  backdrop-filter: saturate(50%) blur(20px);
+  backdrop-filter: hue-rotate(90deg) saturate(30%);
+  backdrop-filter: saturate(30%);
+  backdrop-filter: brightness(30%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+
+.card{
+  color: white;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  &-title{
+    font-size: 48px;
+  }
+  &-subtitle{
+    font-size: 24px;
+  }
+  &-description{
+    font-size: 18px;
+  }
+  &-calltoaction{
+    width: 150px;
+    background-color: white;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    color: #000;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+}
