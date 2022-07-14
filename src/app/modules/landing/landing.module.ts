@@ -9,6 +9,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { SwiperModule } from 'swiper/angular';
 import { BannerVationComponent } from './components/banner-vation/banner-vation.component';
 import { SloganComponent } from './components/slogan/slogan.component';
+import { ServicesComponent } from './components/services/services.component';
+import { ServiceCardComponent } from './components/service-card/service-card.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { SloganComponent } from './components/slogan/slogan.component';
     HomeComponent,
     BannerVationComponent,
     SloganComponent,
+    ServicesComponent,
+    ServiceCardComponent,
+    MapComponent,
 
   ],
   imports: [

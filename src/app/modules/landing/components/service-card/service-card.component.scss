@@ -1,0 +1,144 @@
+figure.item {
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    min-width: 220px;
+    max-width: calc(100% - 40px);
+    max-height: 100%;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    border-radius: 20px;
+}
+figure.item * {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+figure.item img {
+    opacity: 0.8;
+    width: 100%;
+}
+figure.item figcaption {
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+figure.item h2 {
+    font-size: 30px;
+    font-weight: 600;
+    left: 0;
+    right: 0;
+    letter-spacing: -1px;
+    margin: 0 auto;
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+}
+figure.item h2 span {
+    font-weight: 800;
+}
+figure.item p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    opacity: 0;
+    font-size: 14px;
+    -webkit-transform: translateY(-20%) scale(0.7);
+    transform: translateY(-20%) scale(0.7);
+}
+figure.item .square {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    -webkit-transform: rotate(45deg) translate(-50%, -50%);
+    transform: rotate(45deg) translate(-50%, -50%);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+figure.item .square:before,
+figure.item .square:after,
+figure.item .square div:before,
+figure.item .square div:after {
+    background-color: #ffffff;
+    position: absolute;
+    content: "";
+    display: block;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+figure.item .square:before,
+figure.item .square:after {
+    width: 65%;
+    height: 2px;
+}
+figure.item .square div:before,
+figure.item .square div:after {
+    width: 2px;
+    height: 65%;
+}
+figure.item .square:before,
+figure.item .square div:before {
+    left: 0;
+    top: 0;
+}
+figure.item .square:after,
+figure.item .square div:after {
+    bottom: 0;
+    right: 0;
+}
+figure.item a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+figure.item:hover img,
+figure.item.hover img {
+    opacity: 0.25;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+figure.item:hover h2,
+figure.item.hover h2 {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+figure.item:hover p,
+figure.item.hover p {
+    opacity: 1;
+    -webkit-transform: translateY(0px) scale(1);
+    transform: translateY(0px) scale(1);
+}
+figure.item:hover .square:before,
+figure.item.hover .square:before {
+    width: 38%;
+}
+figure.item:hover .square div:before,
+figure.item.hover .square div:before {
+    height: 38%;
+}
+figure.item:hover .square:after,
+figure.item.hover .square:after {
+    width: 55%;
+}
+figure.item:hover .square div:after,
+figure.item.hover .square div:after {
+    height: 55%;
+}
