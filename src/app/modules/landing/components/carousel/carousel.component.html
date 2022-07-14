@@ -1,31 +1,46 @@
-<div id="particles-js">
-  <div class="background"></div>
+<!-- <div id="particles-js">
+</div> -->
 
-</div>
-
-<swiper class="mySwiper">
+<swiper class="mySwiper" [autoplay]="{
+  delay: 2500,
+  disableOnInteraction: false
+}" [pagination]="{
+  clickable: true
+}">
   <ng-template swiperSlide>
-    <div class="card">
-      <h1 class="card-title">Un maravilloso titulo!</h1>
-      <h3 class="card-subtitle">Un subtitilo</h3>
-      <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a class="card-calltoaction" href="http://">Un boton</a>
+    <div class="card" style="background-image: url('../../../../../assets/images/bg.jpg');">
+      <div class="card-content">
+        <h1 class="card-title">Un maravilloso titulo!</h1>
+        <h3 class="card-subtitle">Un subtitilo</h3>
+       <!--  <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+        <a class="card-calltoaction" href="http://">Un boton</a>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide>
+    <div class="card" style="background-image: url('../../../../../assets/images/FONDO\ AV-35.jpg');">
+      <div class="card-content">
+        <h1 class="card-title">Un maravilloso titulo!</h1>
+        <h3 class="card-subtitle">Un subtitilo</h3>
+        <!-- <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+        <a class="card-calltoaction" href="http://">Un boton</a>
+      </div>
     </div>
   </ng-template>
   <ng-template swiperSlide>
     <div class="card">
-     <h1 class="card-title">Un maravilloso titulo!</h1>
-      <h3 class="card-subtitle">Un subtitilo</h3>
-      <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a class="card-calltoaction" href="http://">Un boton</a>
-    </div>
-  </ng-template>
-  <ng-template swiperSlide>
-    <div class="card">
-     <h1 class="card-title">Un maravilloso titulo!</h1>
-      <h3 class="card-subtitle">Un subtitilo</h3>
-      <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a class="card-calltoaction" href="http://">Un boton</a>
+      <div class="card-content">
+        <h1 class="card-title">Un maravilloso titulo!</h1>
+        <h3 class="card-subtitle">Un subtitilo</h3>
+        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a class="card-calltoaction" href="http://">Un boton</a>
+      </div>
     </div>
   </ng-template>
 </swiper>

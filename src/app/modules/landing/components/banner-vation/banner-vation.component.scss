@@ -1,0 +1,55 @@
+.banner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #091221;
+    background: radial-gradient(circle at 100px 100px, #0f1a2b, #091322);
+}
+
+#particles-js {
+    width: 40vw;
+    height: 40vw;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 50%;
+    display: block;
+    background: black;
+    border-radius: 50%;
+    margin: 0;
+    background: radial-gradient(circle at 100px 100px, #182b47, #091322);
+    position: relative;
+    min-height: 200px;
+    min-width: 200px;
+  }
+  
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: transparent; 
+    position: absolute;
+  }
+
+  .logo img{
+    width: 90%;
+  }
+
+  .city{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: none;
+  }
+
+  .city img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+  }

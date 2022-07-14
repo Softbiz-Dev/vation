@@ -5,22 +5,18 @@ import { ParticlesConfig } from '../../particles-config';
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 declare let particlesJS: any;
-
 @Component({
-  selector: 'app-carousel',
-  templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  selector: 'app-banner-vation',
+  templateUrl: './banner-vation.component.html',
+  styleUrls: ['./banner-vation.component.scss']
 })
-export class CarouselComponent implements OnInit {
+export class BannerVationComponent implements OnInit {
 
   constructor() { }
 
-
   ngOnInit(): void {
-    //this.invokeParticles();
+    this.invokeParticles()
   }
-
-
 
   public invokeParticles(): void {
     particlesJS('particles-js', ParticlesConfig, function() {});

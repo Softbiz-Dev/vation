@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SwiperModule } from 'swiper/angular';
+import { BannerVationComponent } from './components/banner-vation/banner-vation.component';
+import { SloganComponent } from './components/slogan/slogan.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { SwiperModule } from 'swiper/angular';
     NavbarComponent,
     CarouselComponent,
     HomeComponent,
+    BannerVationComponent,
+    SloganComponent,
 
   ],
   imports: [

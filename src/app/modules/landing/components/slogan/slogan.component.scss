@@ -1,0 +1,17 @@
+.slogan{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../../../../assets/images/FONDO\ REPETIDORA.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    z-index: 2;
+}
+
+.slogan p{
+    font-size: 30px;
+    font-weight: 700;
+}

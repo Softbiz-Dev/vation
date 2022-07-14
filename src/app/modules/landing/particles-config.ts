@@ -1,23 +1,23 @@
 export const ParticlesConfig = {
   particles: {
     number: {
-      value: 60,
+      value: 100,
       density: {
         enable: true,
         value_area: 1400
       }
     },
     color: {
-      value: '#fff'
+      value: '#365b94'
     },
     shape: {
       type: 'polygon',
       stroke: {
-        width: 1,
-        color: '#fff'
+        width: 10,
+        color: '#365b94'
       },
       polygon: {
-        nb_sides: 6
+        nb_sides: 8
       }
     },
     opacity: {
@@ -25,7 +25,7 @@ export const ParticlesConfig = {
       random: true,
       anim: {
         enable: true,
-        speed: 0.1,
+        speed: 0.2,
         opacity_min: 0.1,
         sync: true
       }
@@ -43,7 +43,7 @@ export const ParticlesConfig = {
     line_linked: {
       enable: true,
       distance: 150,
-      color: '#f1f1f1',
+      color: '#365b94',
       opacity: 1,
       width: 1
     },
