@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -10,6 +10,19 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:scroll', ['$event']) // for window scroll events
+  onScroll(event: any) {
+    const verticalOffset = window.pageYOffset
+      || document.documentElement.scrollTop
+      || document.body.scrollTop || 0;
+
+    if (verticalOffset > 100) {
+      document.getElementById("navbar")!!.style.backgroundColor = "#121f33"
+    } else {
+      document.getElementById("navbar")!!.style.backgroundColor = "transparent"
+    }
   }
 
 }
