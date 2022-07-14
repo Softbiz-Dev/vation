@@ -1,16 +1,16 @@
-.banner{
+.banner {
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #091221;
-    background: radial-gradient(circle at 100px 100px, #0f1a2b, #091322);
+    background-color: #1b2f4d;
+    //background: radial-gradient(circle at 100px 100px, #20395e, #091322);
 }
 
 #particles-js {
-    width: 40vw;
-    height: 40vw;
+    width: 35vw;
+    height: 35vw;
     overflow: hidden;
     background-color: black;
     border-radius: 50%;
@@ -18,38 +18,46 @@
     background: black;
     border-radius: 50%;
     margin: 0;
-    background: radial-gradient(circle at 100px 100px, #182b47, #091322);
+    background: radial-gradient(circle at 100px 100px, #2c4d7e, #091322);
     position: relative;
     min-height: 200px;
     min-width: 200px;
-  }
-  
+}
 
-  .logo{
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: transparent; 
+    background-color: transparent;
     position: absolute;
-  }
+}
 
-  .logo img{
+.logo img {
     width: 90%;
-  }
+}
 
-  .city{
+.city {
     height: 100vh;
     width: 100%;
     position: absolute;
     display: none;
-  }
+}
 
-  .city img{
+.city img {
     height: 600px;
     width: 100%;
     object-fit: cover;
     position: absolute;
     bottom: 0;
-  }
+}
+
+.text {
+    width: 40%;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-align: left;
+}
