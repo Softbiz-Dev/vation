@@ -1,0 +1,30 @@
+.services {
+    height: 600px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem;
+        flex: 1;
+    }
+
+    &-item-image {
+        height: 300px;
+        margin-bottom: 1rem;
+    }
+    &-item-title {
+        text-align: left;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    &-item-description {
+        text-align: center;
+        margin-top: .5rem;
+    }
+}
