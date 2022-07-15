@@ -14,6 +14,10 @@ import { ServiceCardComponent } from './components/service-card/service-card.com
 import { MapComponent } from './components/map/map.component';
 import { IndustriesComponent } from './components/industries/industries.component';
 import { VideoComponent } from './components/video/video.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +32,10 @@ import { VideoComponent } from './components/video/video.component';
     MapComponent,
     IndustriesComponent,
     VideoComponent,
+    FooterComponent,
+    AboutUsComponent,
+    ProductsComponent,
+    ContactComponent,
 
   ],
   imports: [
