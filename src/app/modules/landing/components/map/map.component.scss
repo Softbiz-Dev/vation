@@ -1,143 +1,142 @@
 .title {
-    color: white;
-    font-size: 40px;
-    margin-top: 80px;
-    margin-left: 10%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
+
 .map {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #000;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #01101f;
+  overflow: hidden;
 }
 
 .content {
-    display: flex;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 .side {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+  color: white;
 
-    flex: 1;
+  &-item {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: flex-end;
-    color: white;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
 
-    &-item{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        text-align: center;
-
-        .number{
-            font-weight: 700;
-            font-size: 80px;
-        }
-
-        .text{
-            font-weight: 400;
-            font-size: 20px;
-        }
-
+    .number {
+      font-weight: 700;
+      font-size: 80px;
     }
+
+    .text {
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
 }
 
-
-
-
-
 a {
-    border: 2px solid red;
-    border-radius: 50%;
-    background-color: red;
+  border: 2px solid red;
+  border-radius: 50%;
+  background-color: red;
 }
 
 #img {
-    flex: 3;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    width: 700px;
-    height: 700px;
-    margin: auto;
-    background-image: url("../../../../../assets/images/map.png");
-    overflow: hidden;
+  flex: 3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  max-height: 700px;
+  margin: auto;
+  background-image: url("../../../../../assets/images/map.png");
+  overflow: hidden;
 }
 
 .circle {
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    background-color: red;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: red;
 
-    -webkit-transition: height 0.25s ease, width 0.25s ease;
-    transition: height 0.25s ease, width 0.25s ease;
+  -webkit-transition: height 0.25s ease, width 0.25s ease;
+  transition: height 0.25s ease, width 0.25s ease;
 
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .circle:hover {
-    height: 10px;
-    width: 10px;
+  height: 10px;
+  width: 10px;
 }
 
 .circle:before,
 .circle:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 50%;
-    border: 1px solid red;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid red;
 }
 
 .circle:before {
-    -webkit-animation: ripple 2s linear infinite;
-    animation: ripple 2s linear infinite;
+  -webkit-animation: ripple 2s linear infinite;
+  animation: ripple 2s linear infinite;
 }
 .circle:after {
-    -webkit-animation: ripple 2s linear 1s infinite;
-    animation: ripple 2s linear 1s infinite;
+  -webkit-animation: ripple 2s linear 1s infinite;
+  animation: ripple 2s linear 1s infinite;
 }
 
 .circle:hover:before,
 .circle:hover:after {
-    -webkit-animation: none;
-    animation: none;
+  -webkit-animation: none;
+  animation: none;
 }
 
 @-webkit-keyframes ripple {
-    0% {
-        -webkit-transform: scale(1);
-    }
-    75% {
-        -webkit-transform: scale(3);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: scale(5);
-        opacity: 0;
-    }
+  0% {
+    -webkit-transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(3);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(5);
+    opacity: 0;
+  }
 }
 
 @keyframes ripple {
-    0% {
-        transform: scale(1);
-    }
-    75% {
-        transform: scale(3);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(5);
-        opacity: 0;
-    }
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
 }
