@@ -12,6 +12,8 @@ import { SloganComponent } from './components/slogan/slogan.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ServiceCardComponent } from './components/service-card/service-card.component';
 import { MapComponent } from './components/map/map.component';
+import { IndustriesComponent } from './components/industries/industries.component';
+import { VideoComponent } from './components/video/video.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { MapComponent } from './components/map/map.component';
     ServicesComponent,
     ServiceCardComponent,
     MapComponent,
+    IndustriesComponent,
+    VideoComponent,
 
   ],
   imports: [

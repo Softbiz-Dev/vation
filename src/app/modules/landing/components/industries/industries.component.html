@@ -1,0 +1,29 @@
+<div class="industries">
+  <div class="title">
+    <h1>Nos dirigimos a</h1>
+  </div>
+  <swiper class="mySwiper"
+    [autoplay]="{
+      delay: 2500,
+      disableOnInteraction: false
+    }" [pagination]="{
+      clickable: true
+    }">
+    <ng-template swiperSlide>
+      <div class="industrie">
+        <div class="industrie-title">
+          <h1>Comercio y logística</h1>
+        </div>
+        <img class="industrie-image" src="../../../../../assets/images/comercio-logistica.jpg" alt="" />
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="industrie">
+        <div class="industrie-title">
+          <h1>Salud</h1>
+        </div>
+        <img class="industrie-image" src="../../../../../assets/images/salud.webp" alt="" />
+      </div>
+    </ng-template>
+  </swiper>
+</div>

@@ -1,52 +1,8 @@
 .services {
-    height: 500px;
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    position: relative;
+  height: auto;
+  width: 100%;
+}
 
-    &-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 1rem;
-        flex: 1;
-        position: relative;
-    }
-
-    &-item-image {
-        height: 300px;
-        margin-bottom: 1rem;
-        border-radius: 1rem;
-        z-index: 1;
-    }
-    &-item-title {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        font-weight: 600;
-        line-height: 1.2;
-        white-space: nowrap;
-        transform: translate(20%, -320%);
-        transition: transform 300ms cubic-bezier(0.25, 1, 0.5, 1);;
-        pointer-events: none;
-        font-size: 40px;
-        z-index: 2;
-        color: #fff;
-        text-shadow: -1px 4px 0 black;
-        text-transform: capitalize;
-
-    }
-    &-item-description {
-        text-align: left;
-        margin-top: 0.5rem;
-        height: 100px;
-        font-weight: 600;
-        width: 100%;
-        margin-left: 4rem;
-    }
+.services ::ng-deep  .swiper-slide{
+  width: auto !important;
 }

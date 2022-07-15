@@ -1,63 +1,77 @@
 .banner {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1b2f4d;
-    //background: radial-gradient(circle at 100px 100px, #20395e, #091322);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #01101F;
 }
 
 #particles-js {
-    width: 35vw;
-    height: 35vw;
-    overflow: hidden;
-    background-color: black;
-    border-radius: 50%;
-    display: block;
-    background: black;
-    border-radius: 50%;
-    margin: 0;
-    background: radial-gradient(circle at 100px 100px, #2c4d7e, #091322);
-    position: relative;
-    min-height: 200px;
-    min-width: 200px;
+  width: 35vw;
+  height: 35vw;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 50%;
+  display: block;
+  background: black;
+  border-radius: 50%;
+  margin: 0;
+  background: radial-gradient(circle at 100px 100px, #1C2A52, #031523);
+  position: relative;
+  min-height: 200px;
+  min-width: 200px;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
 }
 
 .logo img {
-    width: 90%;
+  width: 90%;
 }
 
 .city {
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    display: none;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: none;
 }
 
 .city img {
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    bottom: 0;
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
 }
 
 .text {
-    width: 40%;
-    color: #fff;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    text-align: left;
+  width: 40%;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.calltoaction {
+  width: fit-content;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  border-radius: 2rem;
+  color: #fff;
+  margin-top: 1rem;
+  text-align: center;
+  border: 2px solid white;
+  font-weight: 700;
 }

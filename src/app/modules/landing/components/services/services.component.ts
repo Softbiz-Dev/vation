@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import SwiperCore, { Pagination } from "swiper";
+
+// install Swiper modules
+SwiperCore.use([Pagination]);
 
 @Component({
   selector: 'app-services',

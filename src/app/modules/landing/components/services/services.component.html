@@ -1,38 +1,46 @@
 <div class="services">
-    <div class="services-item">
-        <!--      <img class="services-item-image" src="../../../../../assets/images/FONDO AV-35.jpg">
-        <div class="services-item-title">Radio Análogico</div>
-        <p class="services-item-description">
-            Radio de largo alcance, diseñado
-            para el uso intensivo con una
-            comunicación segura.</p> -->
+  <swiper
+    class="mySwiper"
+    [slidesPerView]="'auto'"
+    [spaceBetween]="0"
+    [pagination]="{
+      clickable: true
+    }"
+    [autoplay]="{
+      delay: 2500,
+      disableOnInteraction: false
+    }"
+    [loop]="true"
 
-        <app-service-card [title]="'RADIO ANALÓGICO'" [img]="'../../../../../assets/images/FONDO AV-35.jpg'"
-            [description]="'Radio de largo alcance, diseñado para el uso intensivo con una comunicación segura.'">
-        </app-service-card>
+  >
+    <ng-template swiperSlide>
+      <app-service-card
+        [title]="'RADIO ANALÓGICO'"
+        [img]="'../../../../../assets/images/FONDO AV-35.jpg'"
+        [description]="
+          'Radio de largo alcance, diseñado para el uso intensivo con una comunicación segura.'
+        "
+      >
+      </app-service-card>
+    </ng-template>
 
-    </div>
-    <div class="services-item">
-        <!--      <img class="services-item-image" src="../../../../../assets/images/FONDO CM-21.jpg">
-        <div class="services-item-title">Radio digital</div>
-        <p class="services-item-description">
-            Radio práctico de alta frecuencia,
-            con diseño resistente a condiciones
-            ambientales exigentes.</p> -->
-
-        <app-service-card [title]="'Radio digital'" [img]="'../../../../../assets/images/FONDO CM-21.jpg'"
-            [description]="'Radio práctico de alta frecuencia, con diseño resistente a condiciones ambientales exigentes.'">
-        </app-service-card>
-    </div>
-    <div class="services-item">
-        <!-- <img class="services-item-image" src="../../../../../assets/images/FONDO REPETIDORA.jpg">
-        <div class="services-item-title">Repetidoras</div>
-        <p class="services-item-description">
-            Comunicación Avanzada.</p> -->
-
-        <app-service-card [title]="'Repetidoras'" [img]="'../../../../../assets/images/FONDO REPETIDORA.jpg'"
-            [description]="' Comunicación Avanzada.'">
-        </app-service-card>
-    </div>
-
+    <ng-template swiperSlide>
+      <app-service-card
+        [title]="'Radio digital'"
+        [img]="'../../../../../assets/images/FONDO CM-21.jpg'"
+        [description]="
+          'Radio práctico de alta frecuencia, con diseño resistente a condiciones ambientales exigentes.'
+        "
+      >
+      </app-service-card>
+    </ng-template>
+    <ng-template swiperSlide>
+      <app-service-card
+        [title]="'Repetidoras'"
+        [img]="'../../../../../assets/images/FONDO REPETIDORA.jpg'"
+        [description]="' Comunicación Avanzada.'"
+      >
+      </app-service-card
+    ></ng-template>
+  </swiper>
 </div>
