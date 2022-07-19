@@ -1,0 +1,21 @@
+.title {
+    margin-top: 64px;
+}
+
+.form{
+    margin: 5%;
+    max-width: auto;
+}
+
+
+::ng-deep .p-inputtext {
+    width: 100%;
+}
+
+.phoneNumber{
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 50%;
+}
