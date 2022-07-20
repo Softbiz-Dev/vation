@@ -1,1 +1,76 @@
-<p>contact works!</p>
+<section class="contact">
+    <div class="title">
+        <h1>
+            Titulo de Contacto
+        </h1>
+    </div>
+    <form [formGroup]="form" class="form">
+
+        <div class="grid">
+            <div class="field col-12 md:col-6">
+                <label class="block">Nombre</label>
+                <input id="float-input" type="text" pInputText placeholder="John" formControlName="firstName"/>
+            </div>
+
+            <div class="field col-12 md:col-6">
+                <label class="block">Apellido</label>
+                <input id="float-input" type="text" pInputText placeholder="Doe" formControlName="lastName"/>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="field col-12 md:col-6">
+                <label class="block">Correo electrónico</label>
+                <input id="float-input" type="email" pInputText placeholder="hola@vation.com" formControlName="email"/>
+            </div>
+
+            <div class="phoneNumber">
+                <div class="field">
+                    <label class="block">Operadora</label>
+                    <p-dropdown [options]="phoneOperator" optionValue="name" optionLabel="name" formControlName="operator">
+                    </p-dropdown>
+                </div>
+
+                <div class="field flex-1">
+                    <label class="block">Número</label>
+                    <input id="float-input" type="text" pInputText placeholder="1234567" formControlName="phoneNumber"
+                        (keypress)="onlyNumberKey($event)" maxlength="7" />
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div style="flex: 1">
+                <div class="field col-12 md:col-6">
+                    <label class="block">Estado</label>
+                    <p-dropdown [options]="state" optionValue="name" optionLabel="name" formControlName="state">
+                    </p-dropdown>
+                </div>
+
+                <div class="field col-12 md:col-6">
+                    <label class="block">Tipo de solicitud</label>
+                    <p-dropdown [options]="typeInfo" optionValue="name" optionLabel="name" formControlName="typeRequest">
+                    </p-dropdown>
+                </div>
+            </div>
+
+            <div class="field col-12 md:col-6">
+                <label class="block">¿Cómo quieres ser contactado?</label>
+                <div *ngFor="let category of categories" class="field-checkbox">
+                    <p-checkbox name="group2" formControlName={{category.name}} [value]="checked" [binary]="true"
+                        inputId="binary"></p-checkbox>
+                    <label [for]="category.name">{{category.name}}</label>
+                </div>
+            </div>
+        </div>
+
+        <div  class="field col-12">
+            <label class="block">Comentario</label>
+            <textarea rows="5" cols="30" pInputTextarea [autoResize]="true" formControlName="coment"></textarea>
+        </div>
+
+    </form>
+
+    {{form.value | json}}
+
+</section>
