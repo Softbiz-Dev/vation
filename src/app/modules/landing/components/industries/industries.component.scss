@@ -148,7 +148,7 @@
       background-color: rgba(0, 0, 0, 0.6);
     }
     .news-card:hover .news-card__title {
-      color: yellow;
+      color: #ffe600;
     }
     .news-card:hover .news-card__image {
       transform: scale(1.2);
@@ -162,7 +162,7 @@
 
 .news-card__read-more {
     background: black;
-    color: #bbb;
+    color: rgb(255, 255, 255);
     display: block;
     padding: 0.4rem 0.6rem;
     border-radius: 0.3rem;
@@ -189,6 +189,6 @@
 
 .news-card__read-more:hover i {
       left: 0.5rem;
-      color: yellow;
+      color: #ffe600;
     }
 

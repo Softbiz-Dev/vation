@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 
 @Component({
@@ -10,9 +11,10 @@ export class LandingComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private primengConfig: PrimeNGConfig) { }
 
   ngOnInit(): void {
+    this.primengConfig.ripple = true;
 
   }
 
