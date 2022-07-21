@@ -4,6 +4,7 @@ import DottedMap from 'dotted-map';
 // Or in the browser: import DottedMap from 'dotted-map';
 
 
+
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -12,6 +13,15 @@ import DottedMap from 'dotted-map';
 export class MapComponent implements OnInit {
 
   map:any;
+
+  dots = [
+    {
+      cx:"44.5",
+      cy:"12.12435565298214",
+      r:"0.4",
+      fill:"#008000",
+    }
+  ]
 
   constructor(private sanitization:DomSanitizer) {
 
@@ -55,6 +65,11 @@ export class MapComponent implements OnInit {
 
 
     this.map = this.sanitization.bypassSecurityTrustHtml(svgMap)
+  }
+
+  dotClick(event:any){
+    console.log("click");
+
   }
 
 }
