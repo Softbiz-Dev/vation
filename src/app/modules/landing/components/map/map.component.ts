@@ -68,7 +68,16 @@ export class MapComponent implements OnInit {
   }
 
   dotClick(event:any){
-    console.log("click");
+
+    console.log(event.target.attributes);
+
+    this.dots.push({
+      cx:event.target.attributes.cx.nodeValue,
+      cy:event.target.attributes.cy.nodeValue,
+      r:event.target.attributes.r.nodeValue,
+      fill:"#008000",
+    })
+
 
   }
 
