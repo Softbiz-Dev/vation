@@ -4,30 +4,31 @@
             Titulo de Contacto
         </h1>
     </div>
-    <form [formGroup]="form" class="form">
 
+    <form [formGroup]="form" class="form">
         <div class="grid">
             <div class="field col-12 md:col-6">
                 <label class="block">Nombre</label>
-                <input id="float-input" type="text" pInputText placeholder="John" formControlName="firstName"/>
+                <input id="float-input" type="text" pInputText placeholder="John" formControlName="firstName" />
             </div>
 
             <div class="field col-12 md:col-6">
                 <label class="block">Apellido</label>
-                <input id="float-input" type="text" pInputText placeholder="Doe" formControlName="lastName"/>
+                <input id="float-input" type="text" pInputText placeholder="Doe" formControlName="lastName" />
             </div>
         </div>
 
         <div class="grid">
             <div class="field col-12 md:col-6">
                 <label class="block">Correo electrónico</label>
-                <input id="float-input" type="email" pInputText placeholder="hola@vation.com" formControlName="email"/>
+                <input id="float-input" type="email" pInputText placeholder="hola@vation.com" formControlName="email" />
             </div>
 
             <div class="phoneNumber">
                 <div class="field">
                     <label class="block">Operadora</label>
-                    <p-dropdown [options]="phoneOperator" optionValue="name" optionLabel="name" formControlName="operator">
+                    <p-dropdown [options]="phoneOperator" optionValue="name" optionLabel="name"
+                        formControlName="operator">
                     </p-dropdown>
                 </div>
 
@@ -49,7 +50,8 @@
 
                 <div class="field col-12 md:col-6">
                     <label class="block">Tipo de solicitud</label>
-                    <p-dropdown [options]="typeInfo" optionValue="name" optionLabel="name" formControlName="typeRequest">
+                    <p-dropdown [options]="typeInfo" optionValue="name" optionLabel="name"
+                        formControlName="typeRequest">
                     </p-dropdown>
                 </div>
             </div>
@@ -64,13 +66,14 @@
             </div>
         </div>
 
-        <div  class="field col-12">
+        <div class="field col-12">
             <label class="block">Comentario</label>
             <textarea rows="5" cols="30" pInputTextarea [autoResize]="true" formControlName="coment"></textarea>
         </div>
-
     </form>
 
-    {{form.value | json}}
+    <button>
+        Enviar
+    </button>
 
 </section>
