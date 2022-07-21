@@ -69,7 +69,7 @@
 .animated-button1 {
   background: linear-gradient(-30deg, #4a0b0b 50%, #4a0b0b 50%);
   padding: 20px 40px;
-  margin: 12px;
+  margin: 12px 0;
   display: inline-block;
   transform: translate(0%, 0%);
   overflow: hidden;
@@ -229,7 +229,4 @@
 //   }
 // }
 
-.titleAnimated{
-  margin-left: -200px;
-  opacity: 0;
-}
+
