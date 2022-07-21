@@ -10,6 +10,7 @@ import { StorageService } from './modules/shared/services/storage.service';
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -9,10 +9,12 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
 import {DropdownModule} from 'primeng/dropdown';
 import {CheckboxModule} from 'primeng/checkbox';
 import {RippleModule} from 'primeng/ripple';
+import { FadeInAnimationDirective } from './directives/fade-in-animation.directive';
 
 @NgModule({
   declarations: [
-    
+    FadeInAnimationDirective
+
   ],
   imports: [
     CommonModule,
@@ -23,8 +25,8 @@ import {RippleModule} from 'primeng/ripple';
     ReactiveFormsModule,
     CheckboxModule,
     FontAwesomeModule,
-    RippleModule
-    
+    RippleModule,
+
   ],
   exports: [
     InputTextModule,
@@ -34,7 +36,9 @@ import {RippleModule} from 'primeng/ripple';
     ReactiveFormsModule,
     CheckboxModule,
     FontAwesomeModule,
-    RippleModule
+    RippleModule,
+    FadeInAnimationDirective
+
   ],
   providers: [
 
