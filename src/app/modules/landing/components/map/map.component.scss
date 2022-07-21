@@ -13,6 +13,14 @@
   flex-direction: column;
   background-color: #01101f;
   overflow: hidden;
+  position: relative;
+}
+
+.svg-container{
+  height: auto;
+  width: 800px;
+  padding: 40px;
+  margin: auto;
 }
 
 .content {
@@ -68,10 +76,8 @@ a {
 }
 
 .circle {
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  background-color: red;
+
+  fill: red;
 
   -webkit-transition: height 0.25s ease, width 0.25s ease;
   transition: height 0.25s ease, width 0.25s ease;
@@ -140,3 +146,5 @@ a {
     opacity: 0;
   }
 }
+
+
