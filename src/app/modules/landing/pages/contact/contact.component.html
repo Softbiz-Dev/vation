@@ -1,16 +1,64 @@
 <section class="contact">
-    <div class="title">
-        <h1>
-            Titulo de Contacto
-        </h1>
-    </div>
 
     <div class="grid">
-        <div class="col-12 md:col-6">
-            <img src="../../../../../assets/images/wal.png" alt="">
+        <div class="col-12 block1">
+            <div class="background">
+
+            </div>
+            <div class="title">
+                <h1>
+                    Queremos saber de ti
+                </h1>
+            </div>
         </div>
 
-        <div class="col-12 md:col-6">
+    </div>
+    <div class="grid">
+        <div class="col-12 md:col-6 block2">
+            <div class="content">
+                <h1>
+                    CONTACTO
+                    <hr class="bar">
+                </h1>
+
+                <div class="container-direction">
+                    <h4>
+                        Dirección:
+                    </h4>
+                    <p>
+                        Av. La Estancia con Av. Ernesto Blohm, CCCT Planta Baja, Plaza Central. Urb Chuao, Municipio
+                        Chacao. Caracas.
+                    </p>
+                </div>
+
+                <div class="container-direction">
+                    <h4>
+                        Telefono de Contacto:
+                    </h4>
+                    <p>
+                        +58 0412 965 87 38
+                    </p>
+                </div>
+
+                <div class="container-direction">
+                    <h4>
+                        Correos corporativos:
+                    </h4>
+                    <p>
+                        empresa@vation.com </p>
+                    <p>
+                        ventas@vation.com
+                    </p>
+                    <p>
+                        soportecnico@vation.com
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-12 md:col-6 block3">
             <form [formGroup]="form" class="form">
                 <div class="grid">
                     <div class="field col-12 md:col-6">
@@ -80,11 +128,13 @@
                     </div>
                 </div>
 
-                <button pButton pRipple type="button" label="Enviar" class="p-button-rounded p-button-success" style="width: 100%;" [disabled]="form.invalid"></button>
+                <!-- <p-captcha siteKey="YOUR_SITE_KEY" (onResponse)="showResponse($event)" initCallback="loadCaptcha"></p-captcha> -->
+
+                <button pButton pRipple type="button" label="Enviar" class="p-button-rounded p-button-success"
+                    style="width: 100%;" [disabled]="form.invalid"></button>
             </form>
-
-
         </div>
+
     </div>
 
 </section>

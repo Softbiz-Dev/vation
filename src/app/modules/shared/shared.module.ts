@@ -10,6 +10,7 @@ import {DropdownModule} from 'primeng/dropdown';
 import {CheckboxModule} from 'primeng/checkbox';
 import {RippleModule} from 'primeng/ripple';
 import {ButtonModule} from 'primeng/button';
+import {CaptchaModule} from 'primeng/captcha';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {ButtonModule} from 'primeng/button';
     CheckboxModule,
     FontAwesomeModule,
     RippleModule,
-    ButtonModule
+    ButtonModule,
+    CaptchaModule
     
   ],
   exports: [
@@ -37,7 +39,8 @@ import {ButtonModule} from 'primeng/button';
     CheckboxModule,
     FontAwesomeModule,
     RippleModule,
-    ButtonModule
+    ButtonModule,
+    CaptchaModule
   ],
   providers: [
 
