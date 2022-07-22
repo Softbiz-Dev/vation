@@ -1,18 +1,26 @@
+.contact {
+    background: rgb(82, 80, 80);
+    overflow-x: hidden;
+}
+
 .title {
     margin-top: 64px;
 }
 
-.form{
+.form {
     margin: 5%;
     max-width: auto;
 }
-
 
 ::ng-deep .p-inputtext {
     width: 100%;
 }
 
-.phoneNumber{
+::ng-deep .p-dropdown {
+    width: 100%;
+}
+
+.phoneNumber {
     display: flex;
     align-items: center;
     flex: 0 0 auto;

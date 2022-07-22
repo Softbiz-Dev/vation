@@ -9,6 +9,7 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
 import {DropdownModule} from 'primeng/dropdown';
 import {CheckboxModule} from 'primeng/checkbox';
 import {RippleModule} from 'primeng/ripple';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {RippleModule} from 'primeng/ripple';
     ReactiveFormsModule,
     CheckboxModule,
     FontAwesomeModule,
-    RippleModule
+    RippleModule,
+    ButtonModule
     
   ],
   exports: [
@@ -34,7 +36,8 @@ import {RippleModule} from 'primeng/ripple';
     ReactiveFormsModule,
     CheckboxModule,
     FontAwesomeModule,
-    RippleModule
+    RippleModule,
+    ButtonModule
   ],
   providers: [
 
