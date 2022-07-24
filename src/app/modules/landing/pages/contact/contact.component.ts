@@ -82,4 +82,8 @@ export class ContactComponent implements OnInit {
   onlyNumberKey(event: { charCode: number; }) {
     return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57;
   }
+
+  // showResponse(response) {
+  //   //call to a backend to verify against recaptcha with private key
+  // }
 }

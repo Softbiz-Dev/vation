@@ -10,6 +10,8 @@ import {DropdownModule} from 'primeng/dropdown';
 import {CheckboxModule} from 'primeng/checkbox';
 import {RippleModule} from 'primeng/ripple';
 import { FadeInAnimationDirective } from './directives/fade-in-animation.directive';
+import {ButtonModule} from 'primeng/button';
+import {CaptchaModule} from 'primeng/captcha';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { FadeInAnimationDirective } from './directives/fade-in-animation.directi
     CheckboxModule,
     FontAwesomeModule,
     RippleModule,
+    ButtonModule,
+    CaptchaModule
 
   ],
   exports: [
@@ -37,8 +41,9 @@ import { FadeInAnimationDirective } from './directives/fade-in-animation.directi
     CheckboxModule,
     FontAwesomeModule,
     RippleModule,
-    FadeInAnimationDirective
-
+    FadeInAnimationDirective,
+    ButtonModule,
+    CaptchaModule
   ],
   providers: [
 
