@@ -1,101 +1,132 @@
 .contact {
-    overflow-x: hidden;
+  overflow-x: hidden;
+
+
 }
 
 .title {
-    color: rgb(255, 255, 255);
-    font-size: xxx-large;
-    z-index: 1;
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
+  z-index: 1;
+  font-weight: 300;
 }
 
 .form {
-    margin: 5%;
-    max-width: auto;
+  margin: 5%;
+  max-width: auto;
 }
 
 ::ng-deep .p-inputtext {
-    width: 100%;
+  width: 100%;
 }
 
 ::ng-deep .p-dropdown {
-    width: 100%;
+  width: 100%;
 }
 
 .phoneNumber {
-    display: flex;
-    align-items: center;
-    flex: 0 0 auto;
-    padding: 0.5rem;
-    width: 50%;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  padding: 0.5rem;
+  width: 50%;
 }
 
 .content {
-    margin: 5%;
+  margin: 5%;
 }
 
 .content h1 {
-    padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .block2 {
-    background: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: radial-gradient(circle at 100px 100px, #334c92, #031523);
+  z-index: 1;
+  color: white;
 }
 
-.content p,
-h1 {
-    color: white;
+
+.block2 .content{
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
 }
+
+.container-direction i{
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.block2 .content h1{
+  font-weight: 500;
+}
+
+
 
 .content h4 {
-    color: red;
+  //color: red;
+  display: none;
 }
 
 .block1 img {
-    width: 100%;
+  width: 100%;
 }
 
 .bar {
-    width: 150px;
-    background-color: red;
-    height: 3px;
-    border: none;
-    border-radius: 20px;
+  width: 150px;
+  //background-color: red;
+  height: 3px;
+  border: none;
+  border-radius: 20px;
 }
 
 .container-direction {
-    padding: 0.5rem 0;
+  padding: 0.5rem 0;
 }
 
 .block1 {
-    background-image: url(https://www.eutelsat.com/files/Background/banner-iot-towers.jpg);
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-height: 300px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    position: relative;
+  background-image: url(https://www.eutelsat.com/files/Background/banner-iot-towers.jpg);
+ height: 350px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-height: 350px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
 }
 
 .background {
-    backdrop-filter: saturate(50%) blur(20px);
-    backdrop-filter: hue-rotate(90deg) saturate(30%);
-    backdrop-filter: saturate(30%);
-    backdrop-filter: brightness(45%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
+  backdrop-filter: saturate(50%) blur(20px);
+  backdrop-filter: hue-rotate(90deg) saturate(30%);
+  backdrop-filter: saturate(30%);
+  backdrop-filter: brightness(45%);
+  background: radial-gradient(circle at 100px 100px, #334c92, #031523);
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .block3 {
-    background: whitesmoke;
+  z-index: 1;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin: auto;
 }
+
+.block3 form {
+  background: white;
+  //box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 3rem;
+  //border-radius: 2rem;
+}
+

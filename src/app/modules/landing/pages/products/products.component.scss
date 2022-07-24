@@ -1,5 +1,41 @@
 .products{
-    margin-top: 64px;
+}
+
+.block1 {
+  background-image: url("../../../../../assets/images/FONDO\ REPETIDORA.jpg");
+ height: 550px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
+  z-index: 1;
+  font-weight: 300;
+}
+
+.background {
+  backdrop-filter: saturate(50%) blur(20px);
+  backdrop-filter: hue-rotate(90deg) saturate(30%);
+  backdrop-filter: saturate(30%);
+  backdrop-filter: brightness(45%);
+  background: radial-gradient(circle at 100px 100px, #334c92, #031523);
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .band {
@@ -46,15 +82,11 @@
 }
 
 .card p {
-    flex: 1; 
+    flex: 1;
     line-height: 1.4;
 }
 
-h1 {
-    font-size: 20px;
-    margin: 0;
-    color: #333;
-}
+
 
 .card span {
     font-size: 12px;
@@ -63,6 +95,13 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin: 2em 0 0 0;
+}
+
+.category-title{
+  padding: 2rem 5%;
+  width: 100%;
+  border-bottom: 1px solid whitesmoke;
+  text-align: left;
 }
 
 @media (max-width: 768px) {

@@ -1,7 +1,7 @@
 export const ParticlesConfig = {
   particles: {
     number: {
-      value: 100,
+      value: 80,
       density: {
         enable: true,
         value_area: 1400
@@ -25,7 +25,7 @@ export const ParticlesConfig = {
       random: true,
       anim: {
         enable: true,
-        speed: 0.2,
+        speed: 0.1,
         opacity_min: 0.1,
         sync: true
       }
@@ -49,7 +49,7 @@ export const ParticlesConfig = {
     },
     move: {
       enable: true,
-      speed: 8,
+      speed: 4,
       direction: 'none',
       random: true,
       straight: false,
